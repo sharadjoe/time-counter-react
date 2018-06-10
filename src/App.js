@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom'
 
 import HomePage from './components/pages/HomePage'
 import LoginPage from './components/pages/LoginPage'
+import SignupPage from './components/pages/SignupPage'
 
 class App extends Component {
   render() {
@@ -15,6 +16,10 @@ class App extends Component {
         <Route 
           path="/login"
           exact component={ LoginPage }
+        />
+        <Route 
+          path="/signup"
+          exact component={ SignupPage }
         />
       </div>
     );
